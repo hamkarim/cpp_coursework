@@ -272,10 +272,10 @@ public:
             res += quotient << UINT_BITS * i;
         }
         if (sign_lhs ^ sign_rhs){
-            return *this -= -res * rhs;
+	  return *this -= (-res * rhs) >> shift - UINT_BITS / 2;
         }
         else {
-            return *this -= res * rhs;
+	  return *this -= (res * rhs) >> shift - UINT_BITS / 2;
         }
     }
 
