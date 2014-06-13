@@ -1,5 +1,4 @@
-#ifndef SMALL_VEC_H
-#define SMALL_VEC_H
+#pragma once
 #include "shared_vec.h"
 #include <cstdlib>
 #include <vector>
@@ -42,4 +41,3 @@ private:
     void aquire(shared_vector* ptr);
     void fork();
 };
-#endif

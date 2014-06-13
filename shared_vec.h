@@ -1,6 +1,4 @@
-#ifndef SHARED_VEC_H
-#define SHARED_VEC_H
-
+#pragma once
 #include <cstdlib>
 #include <vector>
 #include <stdio.h>
@@ -35,5 +33,3 @@ public:
     const unsigned int& operator[](size_t i) const;
     void clear();
 };
-
-#endif

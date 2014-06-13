@@ -1,5 +1,4 @@
-#ifndef BIG_INTEGER_H
-#define BIG_INTEGER_H
+#pragme once
 #include <vector>
 #include <stdio.h>
 #include <stdlib.h>
@@ -99,5 +98,3 @@ bool operator>=(big_integer const& a, big_integer const& b);
 
 std::string to_string(big_integer const& a);
 std::ostream& operator<<(std::ostream& s, big_integer const& a);
-
-#endif // BIG_INTEGER_H
